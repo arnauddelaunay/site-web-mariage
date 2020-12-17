@@ -1,0 +1,56 @@
+.navbar{
+    width: 100%;
+    max-width: 100%;
+    min-height: 6vh;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    transition: all .2s ease;
+  }
+  
+  .scrolled{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color:  rgba(238, 238, 238, 0.2);
+  }
+  .logo img{
+    width: 50px;
+  }
+  
+  .navigation{
+    width: 100%;
+    ul{
+      box-sizing: border-box;
+      list-style-type: none;
+      display: table;
+      min-height: 6vh;
+      justify-content: flex-end;
+      align-items: center;
+      width: 100%;
+  
+      li{
+        text-align: center;
+        padding: .5em;
+        display:table-cell;
+        cursor: pointer;
+        &:hover{
+          color: #041F3E;
+        }
+      }
+  
+      li a{
+        text-decoration: none;
+        color: inherit;
+      }
+  
+    }
+  }
+
+@media only screen and (min-width:320px) and (max-width:725px){  
+  .navbar{
+    display: none;
+  }
+}
